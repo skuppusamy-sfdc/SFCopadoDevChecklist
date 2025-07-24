@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>copado__User_Story__c$Name</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.Developer_Checklists__r$Governanace_Item__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.Developer_Checklists__r$Completed__c</field>
+    </columns>
+    <columns>
+        <field>copado__User_Story__c.Developer_Checklists__r$Applicable_For__c</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>copado__User_Story__c$JIRA_Story_Number__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>User Story Developer Checklist</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User_Story_Developer_Checklist__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>copado__User_Story__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>
